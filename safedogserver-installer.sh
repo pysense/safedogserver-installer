@@ -45,8 +45,7 @@ sdserver_install() {
     cd $(tar tzf $soft_name | head -1)
     chmod +x ./install.py
     ./install.py -w web_no
-    popd > /dev/null
-    clean
+    cd; clean
 }
 
 fuyun_login() {
