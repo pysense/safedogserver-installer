@@ -1,6 +1,8 @@
 #!/bin/bash
 # by pysense (pysense@gmail.com)
 
+[[ $(id -u) != "0" ]] && { echo "该脚本需要以 root 权限执行。"; exit 127; }
+
 set -o errexit
 set -o nounset
 
