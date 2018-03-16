@@ -120,7 +120,7 @@ check_selinux
 check_os
 echo "安装依赖包，请确保系统存在可用软件源。"
 case "${OS}" in
-    "CentOS")
+    "CentOS"|"RedHat")
         yum install -y pciutils dmidecode net-tools psmisc mlocate lsof zip
         # for Docker
         #yum install -y pciutils dmidecode net-tools psmisc mlocate lsof which file iptables initscripts e2fsprogs
