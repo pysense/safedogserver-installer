@@ -65,6 +65,7 @@ fuyun_login() {
   3. 将证书文件（safedog_user.psf）存放到目录：/etc/safedog/sdcc/
   4. 执行命令：'sdmonitor -r sdcc'
 
+如果是覆盖安装（升级），并且之前已登陆服云，请忽略该操作。
 EOF
 }
 
